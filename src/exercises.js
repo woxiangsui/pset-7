@@ -17,7 +17,7 @@ function endsMeet(values, n) {
   if (values == undefined || values == "") {
     return show;
   }
-  if (values.length < n || n < 0) {
+  if (values.length < n || n < 0 || n == 0) {
     return show;
   }
   // write your code here
