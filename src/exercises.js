@@ -13,6 +13,13 @@ function commonEnd(a, b) {
 }
 
 function endsMeet(values, n) {
+  var show = [];
+  if (values == undefined || values == "") {
+    return show;
+  }
+  if (values.length < n || n < 0) {
+    return show;
+  }
   // write your code here
 }
 
