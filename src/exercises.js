@@ -55,7 +55,6 @@ function max(number) {
   else {
     return undefined;
   }
-  // write your code here
 }
 
 function middle(values) {
