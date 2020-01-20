@@ -112,7 +112,32 @@ function everywhere(values, x) {
 }
 
 function consecutive(numbers) {
-  // write your code here
+  if (!numbers || numbers.length < 3 || numbers.some(isNaN)) {
+    return false;
+  }
+  else {
+    for (let i = 0; i < numbers.length - 2; i++) {
+      var num = numbers[i];
+      var num1 = numbers[i + 1];
+      var num2 = numbers[i + 2];
+
+      if (num == num1 && num == num2) {
+        return true;
+      }
+      if (num == num1 - 2 && num == num2 - 4) {
+        return true;
+      }
+    }
+    if (num % 2 == 0 && num1 % 2 == 0 && num2 % 2 == 0) {
+      return true;
+    }
+    if (num % 2 == 1 && num1 % 2 == 1 && num2 % 2 == 1) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  } return true;
 }
 
 function balance(numbers) {
