@@ -36,7 +36,6 @@ function difference(numbers) {
     diff = max - min;
     return diff;
   }
-  // write your code here
 }
 
 function max(number) {
