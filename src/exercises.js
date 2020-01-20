@@ -8,15 +8,14 @@ function commonEnd(a, b) {
   else {
     return false;
   }
-
-  // write your code here
 }
 
 function endsMeet(values, n) {
   var show = [];
   if (values == undefined || values.length < n || n <= 0 ) {
     return show;
-  } else {
+  }
+  else {
     for (let i = 0; i < n; i++) {
       show[show.length] = values[i];
     }
@@ -25,7 +24,6 @@ function endsMeet(values, n) {
     }
     return show;
   }
-  // write your code here
 }
 
 function difference(numbers) {
