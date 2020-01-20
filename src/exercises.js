@@ -72,7 +72,24 @@ function middle(values) {
 }
 
 function increasing(numbers) {
-  // write your code here
+  if (numbers == undefined || numbers.length < 3 || numbers.some(isNaN)) {
+    return false;
+  } else {
+    for (var i = 0; i < numbers.length; i++) {
+      var num = numbers[i];
+      var num1 = numbers[i + 1];
+      var num2 = numbers[i + 2];
+      if (numbers[i] == numbers[i + 1] - 1 && numbers[i] == numbers[i + 2] - 2) {
+        return true;
+      }
+    }
+    if (num < num1 < num2) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
 }
 
 function everywhere(values, x) {
