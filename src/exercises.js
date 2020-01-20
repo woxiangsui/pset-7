@@ -39,6 +39,22 @@ function difference(numbers) {
 }
 
 function max(number) {
+  var array = [];
+  if (number == undefined || number.some(isNaN)) {
+    return undefined;
+  }
+  else if (number.length >= 3 && number.length % 2 == 1) {
+    var first = number[0];
+    var middle = number[Math.round((number.length - 1) / 2)];
+    var end = number[number.length - 1];
+
+    array.push(first, middle, end);
+    var max = Number(Math.max.apply(Math, array));
+    return max;
+  }
+  else {
+    return undefined;
+  }
   // write your code here
 }
 
