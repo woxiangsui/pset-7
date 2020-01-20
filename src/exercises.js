@@ -27,6 +27,12 @@ function endsMeet(values, n) {
 }
 
 function difference(numbers) {
+  var min = Number(Math.min.apply(Math, numbers));
+  var max = Number(Math.max.apply(Math, numbers));
+
+  if (numbers == undefined || numbers.length < 1 || numbers.some(isNaN)) {
+    return undefined;
+  }
   // write your code here
 }
 
