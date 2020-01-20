@@ -58,7 +58,17 @@ function max(number) {
 }
 
 function middle(values) {
-  // write your code here
+  var array = [];
+  if (values == undefined || values.length < 3 || values.length % 2 == 0) {
+    return array;
+  } else {
+    var middle1 = values[Math.round((values.length - 1) / 2 - 1)];
+    var middle2 = values[Math.round((values.length - 1) / 2)];
+    var middle3 = values[Math.round((values.length - 1) / 2 + 1)];
+
+    array.push(middle1, middle2, middle3);
+    return array;
+  }
 }
 
 function increasing(numbers) {
