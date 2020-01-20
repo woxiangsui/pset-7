@@ -138,7 +138,7 @@ function consecutive(numbers) {
       return false;
     }
   } return true;
-}
+} // no more plz
 
 function balance(numbers) {
   // write your code here
