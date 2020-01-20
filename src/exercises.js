@@ -14,10 +14,15 @@ function commonEnd(a, b) {
 
 function endsMeet(values, n) {
   var show = [];
-  if (values == undefined || values == "") {
+  if (values == undefined || values.length < n || n <= 0 ) {
     return show;
-  }
-  if (values.length < n || n < 0 || n == 0) {
+  } else {
+    for (let i = 0; i < n; i++) {
+      show[show.length] = values[i];
+    }
+    for (let i = 0; i < n; i++) {
+      show[show.length] = values[values.length - n + i];
+    }
     return show;
   }
   // write your code here
