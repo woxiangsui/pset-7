@@ -32,6 +32,9 @@ function difference(numbers) {
 
   if (numbers == undefined || numbers.length < 1 || numbers.some(isNaN)) {
     return undefined;
+  } else {
+    diff = max - min;
+    return diff;
   }
   // write your code here
 }
