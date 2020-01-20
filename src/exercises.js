@@ -160,14 +160,21 @@ function balance(numbers) {
       if (right == num) {
         return true;
       }
-    } return false; 
+    } return false;
   }
 
   console.log("test");
 }
 
 function clumps(values) {
-  // write your code here
+  if (!values) {
+    return -1;
+  }
+  else {
+    for (let i = 0; i < values.length; i++) {
+      
+    }
+  }
 }
 
 /*
