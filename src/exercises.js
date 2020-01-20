@@ -138,10 +138,31 @@ function consecutive(numbers) {
       return false;
     }
   } return true;
-} // no more plz
+}
 
 function balance(numbers) {
-  // write your code here
+  var right = 0;
+  var left = 0;
+
+  if (!numbers || numbers.length < 2 || numbers.some(isNaN) || Number.isNaN(numbers)) {
+    return false;
+  }
+  else {
+    for (let i = 0; i < numbers.length; i++) {
+      left += numbers[i];
+    }
+    num = left / 2;
+    if (left % 2 == 1) {
+      return false;
+    }
+    for (let i = 0; i < numbers.length; i++) {
+      right += numbers[i];
+      if (right == num) {
+        return true;
+      }
+    } return false; 
+  }
+
   console.log("test");
 }
 
