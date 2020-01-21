@@ -178,7 +178,7 @@ function clumps(values) {
         count++;
         if (same == values[i + 2]) {
           count--;
-        }
+        } // that's it?
       }
     } return count;
   }
