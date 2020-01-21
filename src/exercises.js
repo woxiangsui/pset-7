@@ -167,13 +167,20 @@ function balance(numbers) {
 }
 
 function clumps(values) {
+  var count = 0;
   if (!values) {
     return -1;
   }
   else {
     for (let i = 0; i < values.length; i++) {
-      
-    }
+      var same = values[i];
+      if (same == values[i + 1]) {
+        count++;
+        if (same == values[i + 2]) {
+          count--;
+        }
+      }
+    } return count;
   }
 }
 
