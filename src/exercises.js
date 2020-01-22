@@ -144,7 +144,7 @@ function balance(numbers) {
   var right = 0;
   var left = 0;
 
-  if (!numbers || numbers.length < 2 || numbers.some(isNaN) || Number.isNaN(numbers)) {
+  if (!numbers || numbers.length < 2 || numbers.some(isNaN)) {
     return false;
   }
   else {
